@@ -4,7 +4,7 @@ import { AuthGuard } from "./AuthGuard"
 import { Login } from "../ui/pages/Login"
 import { Register } from "../ui/pages/Register"
 import { Dashboard } from "../ui/pages/Dashboard"
-import { AuthLayout } from "../ui/pages/layouts/AuthLayout"
+import { AuthLayout } from "../ui/layouts/AuthLayout"
 
 export function Router() {
   return (
