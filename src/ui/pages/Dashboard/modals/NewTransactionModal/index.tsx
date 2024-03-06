@@ -40,7 +40,7 @@ export function NewTransactionModal() {
             // error="Selecione o tipo"
             options={[
               {
-                value: 'INVESTIMENT',
+                value: 'INVESTMENT',
                 label: 'Investimentos'
               },
               {
@@ -59,7 +59,7 @@ export function NewTransactionModal() {
             // error="Selecione o tipo"
             options={[
               {
-                value: 'INVESTIMENT',
+                value: 'INVESTMENT',
                 label: 'Investimentos'
               },
               {

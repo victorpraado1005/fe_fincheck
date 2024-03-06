@@ -4,25 +4,26 @@ import { InputCurrency } from "../../../../components/InputCurrency";
 import { Modal } from "../../../../components/Modal";
 import { Input } from "../../../../components/input";
 import { Select } from "../../../../components/Select";
-import { useNewAccountModalController } from "./useNewAccountModalController";
+import { useEditAccountModal } from "./useNewAccountModalController";
+
 import { Controller } from "react-hook-form";
 
-export function NewAccountModal() {
+export function EditAccountModal() {
   const {
-    closeNewAccountModal,
-    isNewAccountModalOpen,
+    isEditAccountModalOpen,
+    closeEditAccountModal,
     errors,
     handleSubmit,
     register,
     control,
     isPending
-  } = useNewAccountModalController();
+  } = useEditAccountModal();
 
   return (
     <Modal
-      title="Nova Conta"
-      open={isNewAccountModalOpen}
-      onClose={closeNewAccountModal}
+      title="Editar Conta"
+      open={isEditAccountModalOpen}
+      onClose={closeEditAccountModal}
     >
       <form onSubmit={handleSubmit}>
         <div>
